@@ -149,7 +149,7 @@ body {
 }
 
 .product-card:hover{
-  trasform:translateY(-8px);
+  transform:translateY(-8px);
 }
 
 .product-card img{
@@ -188,4 +188,23 @@ body {
     border-radius: 8px;
 
     cursor: pointer;
+}
+
+.collection-card {
+  width:300px;
+  margin:50px auto;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.collection-card img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+}
+
+.collection-card h2{
+  text-align:center;
+  color:white;
+  margin-top:10px;
 }
