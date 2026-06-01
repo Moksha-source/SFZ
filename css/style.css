@@ -7,15 +7,20 @@
 body {
   font-family:Arial,sans-serif;
   background:#111;
-  color:white;
+  color:rgb(246, 245, 245);
 }
 
 .nav-bar{
+  position:fixed;
+  top:0;
+  width:100%;
+
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:25px 60px;
-  background:black;
+  background:transparent;
+  z-index:1000;
 }
 
 .logo{
@@ -90,7 +95,7 @@ body {
   width:100%;
   height:100%;
 
-  background:rgba(0,0,0,0.30);
+  background:rgba(0, 0, 0, 0.3);
 }
 
 .hero-content{
@@ -125,4 +130,62 @@ body {
 .hero-content button:hover{
   transform:scale(1.05);
   transition:0.3s;
+}
+
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+
+  padding:80px 50px;
+}
+
+.product-card{
+  background:#111;
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.product-card:hover{
+  trasform:translateY(-8px);
+}
+
+.product-card img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+}
+
+.product-info{
+    padding: 20px;
+}
+
+.product-info h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.product-info p{
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.product-info button{
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    background: gold;
+
+    color: black;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    cursor: pointer;
 }
