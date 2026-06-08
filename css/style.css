@@ -190,11 +190,45 @@ body {
     cursor: pointer;
 }
 
+@media(max-width:768px){
+
+  .products{
+    grid-template-columns:1fr;
+  }
+}
+
+.collection{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:30px;
+  padding:80px 50px;
+}
+
+.collection-grid{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+  width:100%;
+}
+
+.collection h2{
+  color:gold;
+  font-size:40px;
+  margin-bottom:20px;
+  text-align:center;
+}
+
 .collection-card {
   width:300px;
-  margin:50px auto;
   border-radius:15px;
   overflow:hidden;
+}
+
+.collection-card a{
+  text-decoration:none;
+  color:inherit;
 }
 
 .collection-card img{
@@ -205,6 +239,114 @@ body {
 
 .collection-card h2{
   text-align:center;
-  color:white;
+  color:rgb(165, 155, 155);
   margin-top:10px;
 }
+
+.About-Us{
+  padding:80px 80px;
+  gap:30px;
+}
+
+.About-Us h2{
+  text-align:center;
+  color:gold;
+  margin-bottom:30px;
+  font-size:40px;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.why-tabs{
+  background:#191919;
+  border:1px solid rgba(212,175,55,0.7);
+  border-radius:20px;
+  text-align:center;
+  padding:40px 30px;
+  box-shadow:0 0 0 1px rgba(255,215,0,0.1),0 20px 40px rgba(212,175,55,0.12);
+  transition:transform 0.3s ease,box-shadow 0.3s ease;
+}
+
+.emoji-icon{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.why-tabs h3{
+  margin-bottom:20px;
+  font-size:24px;
+  color:gold;
+}
+
+.why-tabs p{
+  color:#ccc;
+  line-height:1.6px;
+}
+
+
+footer{
+  background:#000;
+  color:white;
+  padding:50px 10% 20px;
+}
+
+.footer-container{
+  display:flex;
+  justify-content:space-between; 
+  flex-wrap:wrap;
+  gap:40px;
+}
+
+.footer-links,
+.footer-contact{
+  display:flex;
+  flex-direction:column;
+}
+
+.footer-links h3,
+.footer-contact h3{
+  margin-bottom:15px;
+  color:gold;
+}
+
+
+.footer-logo h2{
+  color:gold;
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.footer-links a{
+  margin:10px 0;
+  color:#ccc;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.footer-links a:hover{
+  color:rgb(147, 27, 27);
+}
+
+
+.footer-contact p{
+  margin:10px ;
+  color:#ccc;
+}
+
+.footer-contact a{
+  text-decoration:none;
+  color:rgb(147, 27, 27);
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:40px;
+  border-top:1px solid #333;
+  padding-top:20px;
+  color:#888;
+}
+
