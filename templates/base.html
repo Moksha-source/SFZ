@@ -1,0 +1,78 @@
+<!Doctype html>
+<html lang="en">
+
+  <head>
+    {% block head %}
+      <title>{% block title %}Sai fashion Zone{% endblock %}</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% endblock %}
+    </head>
+
+  <body>
+  
+    <header>
+      <nav class="nav-bar">
+
+        <div>
+          <ul class="left-links">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="About Us">About Us</a></li>
+            <li><a href="contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="logo">
+          SFZ
+        </div>
+
+        <div class="right-links">
+          <a href="Cart">Wishlist</a>
+        </div>
+   
+      </nav>
+    </header>
+
+    {% block body %}
+    {% endblock %}
+
+
+    <footer>
+
+      <div class="footer-container">
+
+        <div class="footer-logo">
+          <h2>SFZ</h2>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+
+          <a href="{{ url_for('index') }}">Home</a>
+          <a href="#collections">Collections</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>Phone:7997937272</p>
+          <p>Email: saikuvar2000@gmail.com</p>
+          <p>Instagram: <a href="https://www.instagram.com/saifashionzone?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">@SaiFashionZone</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>@ 2026 SFZ. All Rights Reserved.</p>
+      </div>
+      
+    </footer>
+
+
+    <script src="{{ url_for ('static',filename='scripts/script.js')}}"></script>
+
+
+  </body>
+</html>

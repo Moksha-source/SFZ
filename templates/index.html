@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Sai Fashion Zone{% endblock %}
+
+{% block body %}
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>ELEVATE YOUR STYLE</h1>
+        <p>Casual . Trendy . Formal</p>
+        <button>Shop Now</button>
+      </div>
+    </section>
+
+
+    <section id="collections" class="collection">
+      <h2>Shop By Category</h2>
+      <div class="collection-grid">
+        <div class="collection-card">
+          <a href="{{ url_for('shirts') }}">
+            <img src="{{ url_for('static', filename='images/formal1.jpeg') }}" alt="shirts">
+            <h2>Shirts</h2>
+          </a>
+        </div>
+
+        <div class="collection-card">
+          <a href="{{ url_for('pant') }}">
+            <img src="{{ url_for('static', filename='images/pant3.jpeg') }}" alt="Pant">
+            <h2>Pants</h2>
+          </a>
+        </div>
+
+        <div class="collection-card">
+          <a href="{{ url_for('nightpant') }}">
+            <img src="{{ url_for('static', filename='images/nightpant2.jpeg') }}" alt="Pant">
+            <h2>Night Pant</h2>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="About Us" class="About-Us">
+      <h2>Why Choose Us</h2>
+
+      <div class="why-grid">
+
+        <div class="why-tabs">
+          <div class="emoji-icon">👕</div>
+          <h3>Quality Products</h3>
+          <p>Premium Fabrics and design</p>
+        </div>
+
+        <div class="why-tabs">
+          <div class ="emoji-icon">&#128176</div>
+          <h3>Best Prices</h3>
+          <p>Affordable Fashion for Everyone</p>
+        </div>
+
+        <div class="why-tabs">
+          <div class="emoji-icon">&#128205</div>
+          <h3>Visit Our Store</h3>
+          <p>Renigunta Tirupati</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+          <label for="name">Full Name</label>
+          <input id="name" type="text" placeholder="your full name">
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="your.email@gmail.com">
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="tel" placeholder="+91 7997937272">
+          
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option>order Query</option>
+            <option>Custom design</option>
+            <option>Store Visit</option>
+            <option>Other questions</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" row="5" placeholder="Tell us your request..."></textarea>
+          <p id="sendStatus" class="send-status"></p>
+
+          <button type="submit" id="send" class="send-button">Send Message</button>
+      </div>
+    </section>
+
+{% endblock %}

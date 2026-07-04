@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>
+      Collections
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+
+    <div class="collection-card">
+      
+      <a href="{{ url_for('shirts') }}">
+        <img src="{{ url_for('static', filename='images/formal1.jpeg') }}" alt="shirts">
+        <h2>Shirts</h2>
+      </a>
+    </div>
+
+    <div class="collection-card">
+      
+      <a href="{{ url_for('pant') }}">
+        <img src="{{ url_for('static', filename='images/pant3.jpeg') }}" alt="Pant">
+        <h2>Pants</h2>
+      </a>
+    </div>
+
+    <div class="collection-card">
+      
+      <a href="{{ url_for('nightpant') }}">
+        <img src="{{ url_for('static', filename='images/nightpant2.jpeg') }}" alt="Pant">
+        <h2>Night Pant</h2>
+      </a>
+    </div>
+
+
+  </body>
+</html>
