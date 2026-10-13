@@ -38,6 +38,10 @@ def nightpant():
   products = Product.query.filter_by(category='nightpant').all()
   return render_template('nightpant.html',products=products)
 
+@app.route('/wishlist')
+def wishlist():
+    return render_template('wishlist.html')
+
 
 
 if __name__ == "__main__":
