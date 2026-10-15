@@ -565,4 +565,9 @@ footer{
     cursor: pointer;
 }
 
+#collections,
+#about-us,
+#contact {
+    scroll-margin-top: 100px;
+}
 
